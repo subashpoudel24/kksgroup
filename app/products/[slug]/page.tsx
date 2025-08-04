@@ -121,7 +121,7 @@ export default function ProductDetailPage() {
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50">
-        <div className="container mx-auto px-4 py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
           <div className="text-center space-y-4">
             <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-amber-600"></div>
             <p className="text-lg text-gray-600 font-medium">Loading product details...</p>
@@ -181,9 +181,58 @@ export default function ProductDetailPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50">
+      {/* Enhanced Hero Section */}
+            <section className="relative py-24 overflow-hidden">
+              <div className="absolute inset-0 ">
+                <Image
+                  src="https://i.ibb.co/8L4ywdRk/coffee-hero-bg.jpg"
+                  alt="KKS Group"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  priority
+                  />
+              </div>
+              <div className="absolute inset-0 bg-black/20"></div>
+      
+              {/* Animated background elements */}
+              <div className="absolute inset-0 overflow-hidden">
+                <div className="absolute -top-10 -right-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute -bottom-10 -left-10 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+              </div>
+      
+              <div className="relative container mx-auto px-4 text-center text-white">
+                <div className="max-w-4xl mx-auto space-y-8">
+                  <h1 className="text-6xl md:text-7xl font-black tracking-tight">
+                    Premium
+                    <span className="block bg-gradient-to-r from-yellow-200 to-orange-200 bg-clip-text text-transparent">
+                      Collection
+                    </span>
+                  </h1>
+                  {/* <p className="text-xl md:text-2xl leading-relaxed text-white/90 max-w-3xl mx-auto">
+                    Discover our carefully curated selection of professional coffee equipment, premium beans, and artisanal
+                    bakery items from the world's finest craftsmen.
+                  </p> */}
+      
+                  <div className="flex flex-wrap justify-center gap-4 pt-4">
+                    <Badge className="bg-white/20 text-white border-white/30 text-sm px-4 py-2">
+                      <Star className="w-4 h-4 mr-1 fill-current" />
+                      Premium Quality
+                    </Badge>
+                    <Badge className="bg-white/20 text-white border-white/30 text-sm px-4 py-2">
+                      <Coffee className="w-4 h-4 mr-1" />
+                      Freshly Roasted
+                    </Badge>
+                    <Badge className="bg-white/20 text-white border-white/30 text-sm px-4 py-2">
+                      <Zap className="w-4 h-4 mr-1" />
+                      Professional Grade
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+            </section>
       {/* Enhanced Header with Breadcrumbs */}
       <div className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-40">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
           <div className="flex items-center justify-between">
             <Button variant="ghost" asChild className="hover:bg-amber-50 transition-colors duration-200">
               <Link href="/products" className="flex items-center text-gray-600 hover:text-amber-600">
@@ -209,7 +258,7 @@ export default function ProductDetailPage() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Enhanced Product Images */}
           <div className="space-y-6">

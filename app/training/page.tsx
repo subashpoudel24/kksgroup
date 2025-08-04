@@ -171,7 +171,7 @@ export default function TrainingPage() {
             <AnimateOnScroll animationType="fade-up">
             {/* Key Highlights Section */}
             <section className="py-16 bg-white shadow-inner">
-                <div className="container mx-auto px-4">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                         <div className="flex flex-col items-center p-6 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors duration-300">
                             <Clock className="w-10 h-10 text-amber-600 mb-3" />
@@ -200,7 +200,7 @@ export default function TrainingPage() {
             {/* Who Should Join Section */}
             <AnimateOnScroll animationType="fade-up">
             <section className="py-24 bg-white" id="who-should-join">
-                <div className="container mx-auto px-4">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
                     <div className="text-center mb-16">
                         <Badge className="mb-6 bg-blue-500 text-white hover:bg-blue-600 text-lg px-6 py-3 rounded-full shadow-md">
                             🎯 WHO SHOULD JOIN?
@@ -227,7 +227,7 @@ export default function TrainingPage() {
             {/* What You'll Learn Section */}
             <AnimateOnScroll animationType="fade-up">
             <section className="py-24 bg-gray-100" id="what-youll-learn">
-                <div className="container mx-auto px-4">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
                     <div className="text-center mb-16">
                         <Badge className="mb-6 bg-green-500 text-white hover:bg-green-600 text-lg px-6 py-3 rounded-full shadow-md">
                             📚 WHAT YOU'LL LEARN
@@ -269,7 +269,7 @@ export default function TrainingPage() {
             {/* Internship & Certification Section */}
             <AnimateOnScroll animationType="fade-up">
             <section className="py-24 bg-white" id="internship-certification">
-                <div className="container mx-auto px-4">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         {/* Internship */}
                         <div>
@@ -309,7 +309,7 @@ export default function TrainingPage() {
             {/* Why Train With Us Section */}
             <AnimateOnScroll animationType="fade-up">
             <section className="py-24 bg-gray-100" id="why-train-with-us">
-                <div className="container mx-auto px-4">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
                     <div className="text-center mb-16">
                         <Badge className="mb-6 bg-orange-500 text-white hover:bg-orange-600 text-lg px-6 py-3 rounded-full shadow-md">
                             🌟 WHY CHOOSE KKS GROUP?
@@ -334,7 +334,7 @@ export default function TrainingPage() {
             </section>
             </AnimateOnScroll>
             {/* Instructors Section */}
-            <AnimateOnScroll animationType="fade-up">
+            {/* <AnimateOnScroll animationType="fade-up">
             <section className="py-24 bg-white" id="instructors">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
@@ -409,11 +409,11 @@ export default function TrainingPage() {
                     </div>
                 </div>
             </section>
-            </AnimateOnScroll>
+            </AnimateOnScroll> */}
             {/* Training Center Info */}
             <AnimateOnScroll animationType="fade-up">
             <section className="py-24 bg-gradient-to-br from-gray-50 to-white" id="facility">
-                <div className="container mx-auto px-4">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="order-2 lg:order-1">
                             <Badge className="mb-6 bg-green-500 text-white hover:bg-green-600 text-lg px-6 py-3 rounded-full shadow-md">

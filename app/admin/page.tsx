@@ -30,7 +30,7 @@ export default function AdminLoginPage() {
     setLoading(true)
 
     // Simple authentication (in production, use proper JWT/session management)
-    if (credentials.username === "kksgroup" && credentials.password === "subash123") {
+    if (credentials.username === "kksgroup" && credentials.password === "kksgroup@2025") {
       localStorage.setItem("admin_logged_in", "true")
       toast({
         title: "Login Successful! 🎉",

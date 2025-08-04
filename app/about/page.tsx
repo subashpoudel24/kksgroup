@@ -55,7 +55,7 @@ export default function AboutPage() {
       {/* Professional Equipment Section */}
       <AnimateOnScroll animationType="fade-up">
       <section className="py-24 bg-gradient-to-b from-white to-gray-50">
-        <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <Badge variant="secondary" className="mb-8 bg-stone-100 text-stone-700 px-4 py-2 text-sm font-medium">
@@ -111,7 +111,7 @@ export default function AboutPage() {
       {/* Our Offerings Section */}
       <AnimateOnScroll animationType="fade-up">
       <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="relative">
@@ -189,7 +189,7 @@ export default function AboutPage() {
       {/* Why Choose KKS Group */}
       <AnimateOnScroll animationType="fade-up">
       <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
           <div className="text-center mb-20">
             <Badge variant="secondary" className="mb-8 bg-stone-100 text-stone-700 px-4 py-2 text-sm font-medium">
               WHY CHOOSE KKS GROUP?
@@ -268,7 +268,7 @@ export default function AboutPage() {
             className="object-cover opacity-10"
           />
         </div>
-        <div className="container mx-auto px-4 relative z-10">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="group">
               <div className="text-4xl lg:text-5xl font-bold text-white mb-2 group-hover:text-amber-400 transition-colors duration-300">500+</div>

@@ -118,7 +118,7 @@ export default function ContactPage() {
       <AnimateOnScroll animationType="fade-up">
       <section className="py-16 bg-white">
         
-        <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
@@ -337,7 +337,7 @@ export default function ContactPage() {
       {/* FAQ Section */}
       <AnimateOnScroll animationType="fade-up">
       <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">

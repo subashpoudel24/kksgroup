@@ -22,55 +22,45 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section (Full Width Banner) */}
-      <section className="relative min-h-screen flex items-center justify-start overflow-hidden">
-        <div className="absolute inset-0" style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
-          {" "}
-          {/* Parallax effect */}
-          <Image
-            src="https://i.ibb.co/8L4ywdRk/coffee-hero-bg.jpg" // Original image for hero
+      <section className="relative min-h-screen flex items-center justify-center md:justify-start overflow-hidden">
+        {/* Background Image with Parallax */}
+        <div
+          className="absolute inset-0"
+          style={{ transform: `translateY(${offsetY * 0.3}px)` }}
+        >
+          <img
+            src="https://iili.io/F4IMq7t.png"
             alt="Cozy coffee and pastries"
-            fill
-            className="object-cover"
-            priority
+            className="w-full h-full object-cover md:object-fill"
           />
-          <div
-            className="absolute inset-0"
-          // style={{
-          //   background: `linear-gradient(135deg, rgba(75, 46, 43, 0.8) 0%, rgba(210, 105, 30, 0.6) 100%)`,
-          // }}
-          ></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent md:from-black/70 md:via-black/30 md:to-transparent"></div>
         </div>
-        <div className="container px-4 relative z-10 max-w-4xl text-left">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight" style={{ color: "#F5EBDD" }}>
-            Your Daily Brew & Freshly Baked Goodness
-          </h1>
-          <p className="text-xl md:text-2xl mb-12 leading-relaxed" style={{ color: "rgba(245, 235, 221, 0.9)" }}>
-            From premium beans to freshly baked delights – we bring the café to you.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-start">
-            <Link href="/products">
-              <Button
-                size="lg"
-                className="px-8 py-4 text-lg font-semibold rounded-lg hover:opacity-90 transition-opacity"
-                style={{ backgroundColor: "#4B2E2B", color: "#F5EBDD" }}
-              >
-                <Coffee className="w-5 h-5 mr-2" />
+
+        {/* Content */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
+          <div className="text-center md:text-left md:max-w-2xl lg:max-w-3xl">
+            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight" style={{ color: "#F5EBDD" }}>
+              Your Daily Brew & Freshly Baked Goodness
+            </h1>
+            <p className="text-lg sm:text-xl md:text-xl lg:text-2xl mb-8 sm:mb-10 md:mb-12 leading-relaxed max-w-2xl mx-auto md:mx-0" style={{ color: "rgba(245, 235, 221, 0.9)" }}>
+              From premium beans to freshly baked delights – we bring the café to you.
+            </p>
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center md:items-start">
+              <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg" style={{ backgroundColor: "#4B2E2B", color: "#F5EBDD" }}>
+                <Coffee className="w-4 h-4 sm:w-5 sm:h-5" />
                 Explore Coffee
-              </Button>
-            </Link>
-            <Link href="/products">
-              <Button
-                size="lg"
-                className="px-8 py-4 text-lg font-semibold rounded-lg hover:opacity-90 transition-opacity"
-                style={{ backgroundColor: "#D7BFAE", color: "#4B2E2B" }}
-              >
-                <UtensilsCrossed className="w-5 h-5 mr-2" />
+              </button>
+              <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg" style={{ backgroundColor: "#D7BFAE", color: "#4B2E2B" }}>
+                <UtensilsCrossed className="w-4 h-4 sm:w-5 sm:h-5" />
                 See Bakery
-              </Button>
-            </Link>
+              </button>
+            </div>
           </div>
         </div>
       </section>
+
 
       {/* Category Highlights (Main Focus Section) */}
       <AnimateOnScroll animationType="fade-up">
@@ -84,11 +74,11 @@ export default function HomePage() {
                 Explore our curated selection of premium coffee and freshly baked goods.
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8 container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
               <Card className="border-0 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
                 <div className="relative h-60">
                   <Image
-                    src="https://images.pexels.com/photos/1126728/pexels-photo-1126728.jpeg" // Original coffee beans image
+                    src="https://i.ibb.co/G3n4VHvS/mockup.jpg" // Original coffee beans image
                     alt="Coffee Beans"
                     fill
                     className="object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300"
@@ -114,7 +104,7 @@ export default function HomePage() {
               <Card className="border-0 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
                 <div className="relative h-60">
                   <Image
-                    src="https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg" // Original espresso machine image
+                    src="https://i.ibb.co/ycSQ2kxp/ACM-tecnika-dettagio-1-2.jpg" // Original espresso machine image
                     alt="Coffee Machines"
                     fill
                     className="object-cover rounded-t-lg group-hover:scale-105 transition-transform duration-300"
@@ -171,7 +161,7 @@ export default function HomePage() {
       {/* About Us Section (Brand Story) */}
       <AnimateOnScroll animationType="fade-up">
         <section className="py-20" style={{ backgroundColor: "#FAF5F0" }}>
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="relative">
                 <Image
@@ -210,7 +200,7 @@ export default function HomePage() {
       {/* Why Choose Us Section */}
       <AnimateOnScroll animationType="fade-up">
         <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
             <div className="text-center mb-16">
               <Badge className="mb-6 px-4 py-2" style={{ backgroundColor: "#D2691E", color: "#F5EBDD" }}>
                 Why Choose Us
@@ -286,7 +276,7 @@ export default function HomePage() {
 
       {/* Proudly Part of KKS Group Section */}
       <section className="py-20" style={{ backgroundColor: "#FAF7F2" }}>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "#2D2D2D" }}>
               Proudly Part of KKS Group
@@ -369,7 +359,7 @@ export default function HomePage() {
       {/* Training Classes Section */}
       <AnimateOnScroll animationType="fade-up">
         <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
                 <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "#2D2D2D" }}>
@@ -442,7 +432,7 @@ export default function HomePage() {
       {/* Newsletter Signup */}
       <AnimateOnScroll animationType="fade-up">
         <section className="py-20 text-center" style={{ backgroundColor: "#FAF7F2" }}>
-          <div className="container mx-auto px-4 max-w-2xl">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
             <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: "#2D2D2D" }}>
               {"☕ Stay Updated on Fresh Bakes & New Brews!"}
             </h2>

@@ -155,7 +155,7 @@ export default function ProductsPage() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 ">
           <Image
-            src="https://i.ibb.co/FLVkgbZf/mike-kenneally-t-NALo-IZhq-VM-unsplash.jpg"
+            src="https://i.ibb.co/8L4ywdRk/coffee-hero-bg.jpg"
             alt="KKS Group"
             fill
             style={{ objectFit: "cover" }}
@@ -269,7 +269,7 @@ export default function ProductsPage() {
         </div>
 
         {/* Enhanced Product Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
           {filteredProducts.map((product, index) => (
             <Card
               key={product._id}

@@ -216,7 +216,7 @@ export default function BlogPage() {
         )}
 
         {/* Blog Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
           {filteredBlogs.filter(blog => !blog.featured).map((blog, index) => (
             <Card
               key={blog._id}

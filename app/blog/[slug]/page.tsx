@@ -64,6 +64,23 @@ export default function BlogDetailPage() {
   }
 
   return (
+    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+    {/* Hero Section */ }
+    < section className = "relative py-20  text-white overflow-hidden" >
+        <Image
+          src="https://i.ibb.co/Pvzyq2Lm/janko-ferlic-h9-Iq22-JJl-Gk-unsplash.jpg"
+          alt="KKS Group blog"
+          fill
+          style={{ objectFit: "cover" }}
+          priority
+        />
+        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">COFFEE INSIGHTS & EXPERTISE</h1>
+ {/* Feature highlights */}
+        </div>
+        </section>
+      
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       <Button variant="ghost" asChild className="mb-6">
         <Link href="/blog">
@@ -128,6 +145,7 @@ export default function BlogDetailPage() {
           </div>
         </footer>
       </article>
+      </div>
     </div>
   )
 }
