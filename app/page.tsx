@@ -29,7 +29,7 @@ export default function HomePage() {
           style={{ transform: `translateY(${offsetY * 0.3}px)` }}
         >
           <img
-            src="https://iili.io/F4IMq7t.png"
+            src="https://i.ibb.co/nxJSS6Q/Untitled-1550-x-850-px.png"
             alt="Cozy coffee and pastries"
             className="w-full h-full object-cover md:object-fill"
           />
