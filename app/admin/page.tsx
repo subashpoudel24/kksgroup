@@ -11,7 +11,7 @@ import { useToast } from "@/hooks/use-toast"
 import { Coffee, Lock, Eye, EyeOff } from "lucide-react"
 
 export default function AdminLoginPage() {
-  const [credentials, setCredentials] = useState({ username: "", password: "" })
+ // const [credentials, setCredentials] = useState({ username: "", password: "" })
   const [loading, setLoading] = useState(false)
   const [showPassword, setShowPassword] = useState(false)
   const { toast } = useToast()
@@ -19,10 +19,7 @@ export default function AdminLoginPage() {
 
   useEffect(() => {
     // Check if already logged in
-    const isLoggedIn = localStorage.getItem("admin_logged_in")
-    if (isLoggedIn === "true") {
-      router.push("/admin/dashboard")
-    }
+   
   }, [router])
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -30,22 +27,7 @@ export default function AdminLoginPage() {
     setLoading(true)
 
     // Simple authentication (in production, use proper JWT/session management)
-    if (credentials.username === "kksgroup" && credentials.password === "kksgroup@2025") {
-      localStorage.setItem("admin_logged_in", "true")
-      toast({
-        title: "Login Successful! 🎉",
-        description: "Welcome to the KKS Group admin panel!",
-      })
-      router.push("/admin/dashboard")
-    } else {
-      toast({
-        title: "Login Failed ❌",
-        description: "Invalid username or password. Please try again.",
-        variant: "destructive",
-      })
-    }
-    setLoading(false)
-  }
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 flex items-center justify-center py-12 px-4">
